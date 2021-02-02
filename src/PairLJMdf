@@ -1,0 +1,9 @@
+pair_lj_mdf_omp.cpp:PairLJMdfOMP::PairLJMdfOMP(LAMMPS *lmp) :
+pair_lj_mdf_omp.cpp:PairLJMdf(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_mdf_omp.cpp:void PairLJMdfOMP::compute(int eflag, int vflag)
+pair_lj_mdf_omp.cpp:void PairLJMdfOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_mdf_omp.cpp:double PairLJMdfOMP::memory_usage()
+pair_lj_mdf_omp.cpp:    bytes += PairLJMdf::memory_usage();
+pair_lj_mdf_omp.h:PairStyle(lj/mdf/omp,PairLJMdfOMP)
+pair_lj_mdf_omp.h:    class PairLJMdfOMP : public PairLJMdf, public ThrOMP {
+pair_lj_mdf_omp.h:        PairLJMdfOMP(class LAMMPS *);

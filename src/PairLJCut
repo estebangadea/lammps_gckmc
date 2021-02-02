@@ -1,0 +1,250 @@
+Binary file lmp_intel_cpu matches
+pair_lj_cut_coul_cut.cpp:PairLJCutCoulCut::PairLJCutCoulCut(LAMMPS *lmp) : Pair(lmp)
+pair_lj_cut_coul_cut.cpp:PairLJCutCoulCut::~PairLJCutCoulCut()
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::compute(int eflag, int vflag)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::allocate()
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::settings(int narg, char **arg)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::coeff(int narg, char **arg)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::init_style()
+pair_lj_cut_coul_cut.cpp:double PairLJCutCoulCut::init_one(int i, int j)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::write_restart(FILE *fp)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::read_restart(FILE *fp)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::write_restart_settings(FILE *fp)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::read_restart_settings(FILE *fp)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::write_data(FILE *fp)
+pair_lj_cut_coul_cut.cpp:void PairLJCutCoulCut::write_data_all(FILE *fp)
+pair_lj_cut_coul_cut.cpp:double PairLJCutCoulCut::single(int i, int j, int itype, int jtype,
+pair_lj_cut_coul_cut.cpp:void *PairLJCutCoulCut::extract(const char *str, int &dim)
+pair_lj_cut_coul_cut.h:PairStyle(lj/cut/coul/cut,PairLJCutCoulCut)
+pair_lj_cut_coul_cut.h:class PairLJCutCoulCut : public Pair {
+pair_lj_cut_coul_cut.h:  PairLJCutCoulCut(class LAMMPS *);
+pair_lj_cut_coul_cut.h:  virtual ~PairLJCutCoulCut();
+pair_lj_cut_coul_cut_omp.cpp:PairLJCutCoulCutOMP::PairLJCutCoulCutOMP(LAMMPS *lmp) :
+pair_lj_cut_coul_cut_omp.cpp:  PairLJCutCoulCut(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_coul_cut_omp.cpp:void PairLJCutCoulCutOMP::compute(int eflag, int vflag)
+pair_lj_cut_coul_cut_omp.cpp:void PairLJCutCoulCutOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_coul_cut_omp.cpp:double PairLJCutCoulCutOMP::memory_usage()
+pair_lj_cut_coul_cut_omp.cpp:  bytes += PairLJCutCoulCut::memory_usage();
+pair_lj_cut_coul_cut_omp.h:PairStyle(lj/cut/coul/cut/omp,PairLJCutCoulCutOMP)
+pair_lj_cut_coul_cut_omp.h:class PairLJCutCoulCutOMP : public PairLJCutCoulCut, public ThrOMP {
+pair_lj_cut_coul_cut_omp.h:  PairLJCutCoulCutOMP(class LAMMPS *);
+pair_lj_cut_coul_debye.cpp:PairLJCutCoulDebye::PairLJCutCoulDebye(LAMMPS *lmp) : PairLJCutCoulCut(lmp) {}
+pair_lj_cut_coul_debye.cpp:void PairLJCutCoulDebye::compute(int eflag, int vflag)
+pair_lj_cut_coul_debye.cpp:void PairLJCutCoulDebye::settings(int narg, char **arg)
+pair_lj_cut_coul_debye.cpp:void PairLJCutCoulDebye::write_restart_settings(FILE *fp)
+pair_lj_cut_coul_debye.cpp:void PairLJCutCoulDebye::read_restart_settings(FILE *fp)
+pair_lj_cut_coul_debye.cpp:double PairLJCutCoulDebye::single(int i, int j, int itype, int jtype,
+pair_lj_cut_coul_debye.h:PairStyle(lj/cut/coul/debye,PairLJCutCoulDebye)
+pair_lj_cut_coul_debye.h:class PairLJCutCoulDebye : public PairLJCutCoulCut {
+pair_lj_cut_coul_debye.h:  PairLJCutCoulDebye(class LAMMPS *);
+pair_lj_cut_coul_debye.h:  virtual ~PairLJCutCoulDebye() {}
+pair_lj_cut_coul_debye_omp.cpp:PairLJCutCoulDebyeOMP::PairLJCutCoulDebyeOMP(LAMMPS *lmp) :
+pair_lj_cut_coul_debye_omp.cpp:  PairLJCutCoulDebye(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_coul_debye_omp.cpp:void PairLJCutCoulDebyeOMP::compute(int eflag, int vflag)
+pair_lj_cut_coul_debye_omp.cpp:void PairLJCutCoulDebyeOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_coul_debye_omp.cpp:double PairLJCutCoulDebyeOMP::memory_usage()
+pair_lj_cut_coul_debye_omp.cpp:  bytes += PairLJCutCoulDebye::memory_usage();
+pair_lj_cut_coul_debye_omp.h:PairStyle(lj/cut/coul/debye/omp,PairLJCutCoulDebyeOMP)
+pair_lj_cut_coul_debye_omp.h:class PairLJCutCoulDebyeOMP : public PairLJCutCoulDebye, public ThrOMP {
+pair_lj_cut_coul_debye_omp.h:  PairLJCutCoulDebyeOMP(class LAMMPS *);
+pair_lj_cut_coul_dsf.cpp:PairLJCutCoulDSF::PairLJCutCoulDSF(LAMMPS *lmp) : Pair(lmp)
+pair_lj_cut_coul_dsf.cpp:PairLJCutCoulDSF::~PairLJCutCoulDSF()
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::compute(int eflag, int vflag)
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::allocate()
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::settings(int narg, char **arg)
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::coeff(int narg, char **arg)
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::init_style()
+pair_lj_cut_coul_dsf.cpp:double PairLJCutCoulDSF::init_one(int i, int j)
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::write_restart(FILE *fp)
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::read_restart(FILE *fp)
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::write_restart_settings(FILE *fp)
+pair_lj_cut_coul_dsf.cpp:void PairLJCutCoulDSF::read_restart_settings(FILE *fp)
+pair_lj_cut_coul_dsf.cpp:double PairLJCutCoulDSF::single(int i, int j, int itype, int jtype, double rsq,
+pair_lj_cut_coul_dsf.cpp:void *PairLJCutCoulDSF::extract(const char *str, int &dim)
+pair_lj_cut_coul_dsf.h:PairStyle(lj/cut/coul/dsf,PairLJCutCoulDSF)
+pair_lj_cut_coul_dsf.h:class PairLJCutCoulDSF : public Pair {
+pair_lj_cut_coul_dsf.h:  PairLJCutCoulDSF(class LAMMPS *);
+pair_lj_cut_coul_dsf.h:  ~PairLJCutCoulDSF();
+pair_lj_cut_coul_dsf_omp.cpp:PairLJCutCoulDSFOMP::PairLJCutCoulDSFOMP(LAMMPS *lmp) :
+pair_lj_cut_coul_dsf_omp.cpp:  PairLJCutCoulDSF(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_coul_dsf_omp.cpp:void PairLJCutCoulDSFOMP::compute(int eflag, int vflag)
+pair_lj_cut_coul_dsf_omp.cpp:void PairLJCutCoulDSFOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_coul_dsf_omp.cpp:double PairLJCutCoulDSFOMP::memory_usage()
+pair_lj_cut_coul_dsf_omp.cpp:  bytes += PairLJCutCoulDSF::memory_usage();
+pair_lj_cut_coul_dsf_omp.h:PairStyle(lj/cut/coul/dsf/omp,PairLJCutCoulDSFOMP)
+pair_lj_cut_coul_dsf_omp.h:class PairLJCutCoulDSFOMP : public PairLJCutCoulDSF, public ThrOMP {
+pair_lj_cut_coul_dsf_omp.h:  PairLJCutCoulDSFOMP(class LAMMPS *);
+pair_lj_cut_coul_long.cpp:PairLJCutCoulLong::PairLJCutCoulLong(LAMMPS *lmp) : Pair(lmp)
+pair_lj_cut_coul_long.cpp:PairLJCutCoulLong::~PairLJCutCoulLong()
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::compute(int eflag, int vflag)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::compute_inner()
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::compute_middle()
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::compute_outer(int eflag, int vflag)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::allocate()
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::settings(int narg, char **arg)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::coeff(int narg, char **arg)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::init_style()
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::init_list(int id, NeighList *ptr)
+pair_lj_cut_coul_long.cpp:double PairLJCutCoulLong::init_one(int i, int j)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::write_restart(FILE *fp)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::read_restart(FILE *fp)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::write_restart_settings(FILE *fp)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::read_restart_settings(FILE *fp)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::write_data(FILE *fp)
+pair_lj_cut_coul_long.cpp:void PairLJCutCoulLong::write_data_all(FILE *fp)
+pair_lj_cut_coul_long.cpp:double PairLJCutCoulLong::single(int i, int j, int itype, int jtype,
+pair_lj_cut_coul_long.cpp:void *PairLJCutCoulLong::extract(const char *str, int &dim)
+pair_lj_cut_coul_long.h:PairStyle(lj/cut/coul/long,PairLJCutCoulLong)
+pair_lj_cut_coul_long.h:class PairLJCutCoulLong : public Pair {
+pair_lj_cut_coul_long.h:  PairLJCutCoulLong(class LAMMPS *);
+pair_lj_cut_coul_long.h:  virtual ~PairLJCutCoulLong();
+pair_lj_cut_coul_long_intel.cpp:PairLJCutCoulLongIntel::PairLJCutCoulLongIntel(LAMMPS *lmp) :
+pair_lj_cut_coul_long_intel.cpp:  PairLJCutCoulLong(lmp)
+pair_lj_cut_coul_long_intel.cpp:PairLJCutCoulLongIntel::~PairLJCutCoulLongIntel()
+pair_lj_cut_coul_long_intel.cpp:void PairLJCutCoulLongIntel::compute(int eflag, int vflag)
+pair_lj_cut_coul_long_intel.cpp:void PairLJCutCoulLongIntel::compute(int eflag, int vflag,
+pair_lj_cut_coul_long_intel.cpp:void PairLJCutCoulLongIntel::eval(const int offload, const int vflag,
+pair_lj_cut_coul_long_intel.cpp:void PairLJCutCoulLongIntel::init_style()
+pair_lj_cut_coul_long_intel.cpp:  PairLJCutCoulLong::init_style();
+pair_lj_cut_coul_long_intel.cpp:void PairLJCutCoulLongIntel::pack_force_const(ForceConst<flt_t> &fc,
+pair_lj_cut_coul_long_intel.cpp:void PairLJCutCoulLongIntel::ForceConst<flt_t>::set_ntypes(const int ntypes,
+pair_lj_cut_coul_long_intel.h:PairStyle(lj/cut/coul/long/intel,PairLJCutCoulLongIntel)
+pair_lj_cut_coul_long_intel.h:class PairLJCutCoulLongIntel : public PairLJCutCoulLong {
+pair_lj_cut_coul_long_intel.h:  PairLJCutCoulLongIntel(class LAMMPS *);
+pair_lj_cut_coul_long_intel.h:  virtual ~PairLJCutCoulLongIntel();
+pair_lj_cut_coul_long_omp.cpp:PairLJCutCoulLongOMP::PairLJCutCoulLongOMP(LAMMPS *lmp) :
+pair_lj_cut_coul_long_omp.cpp:  PairLJCutCoulLong(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_coul_long_omp.cpp:void PairLJCutCoulLongOMP::compute(int eflag, int vflag)
+pair_lj_cut_coul_long_omp.cpp:void PairLJCutCoulLongOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_coul_long_omp.cpp:double PairLJCutCoulLongOMP::memory_usage()
+pair_lj_cut_coul_long_omp.cpp:  bytes += PairLJCutCoulLong::memory_usage();
+pair_lj_cut_coul_long_omp.h:PairStyle(lj/cut/coul/long/omp,PairLJCutCoulLongOMP)
+pair_lj_cut_coul_long_omp.h:class PairLJCutCoulLongOMP : public PairLJCutCoulLong, public ThrOMP {
+pair_lj_cut_coul_long_omp.h:  PairLJCutCoulLongOMP(class LAMMPS *);
+pair_lj_cut_coul_msm.cpp:PairLJCutCoulMSM::PairLJCutCoulMSM(LAMMPS *lmp) : PairLJCutCoulLong(lmp)
+pair_lj_cut_coul_msm.cpp:PairLJCutCoulMSM::~PairLJCutCoulMSM()
+pair_lj_cut_coul_msm.cpp:void PairLJCutCoulMSM::compute(int eflag, int vflag)
+pair_lj_cut_coul_msm.cpp:void PairLJCutCoulMSM::compute_outer(int eflag, int vflag)
+pair_lj_cut_coul_msm.cpp:double PairLJCutCoulMSM::single(int i, int j, int itype, int jtype,
+pair_lj_cut_coul_msm.cpp:void *PairLJCutCoulMSM::extract(const char *str, int &dim)
+pair_lj_cut_coul_msm.h:PairStyle(lj/cut/coul/msm,PairLJCutCoulMSM)
+pair_lj_cut_coul_msm.h:class PairLJCutCoulMSM : public PairLJCutCoulLong {
+pair_lj_cut_coul_msm.h:  PairLJCutCoulMSM(class LAMMPS *);
+pair_lj_cut_coul_msm.h:  virtual ~PairLJCutCoulMSM();
+pair_lj_cut_coul_msm_omp.cpp:PairLJCutCoulMSMOMP::PairLJCutCoulMSMOMP(LAMMPS *lmp) :
+pair_lj_cut_coul_msm_omp.cpp:  PairLJCutCoulMSM(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_coul_msm_omp.cpp:void PairLJCutCoulMSMOMP::compute(int eflag, int vflag)
+pair_lj_cut_coul_msm_omp.cpp:void PairLJCutCoulMSMOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_coul_msm_omp.cpp:double PairLJCutCoulMSMOMP::memory_usage()
+pair_lj_cut_coul_msm_omp.cpp:  bytes += PairLJCutCoulMSM::memory_usage();
+pair_lj_cut_coul_msm_omp.h:PairStyle(lj/cut/coul/msm/omp,PairLJCutCoulMSMOMP)
+pair_lj_cut_coul_msm_omp.h:class PairLJCutCoulMSMOMP : public PairLJCutCoulMSM, public ThrOMP {
+pair_lj_cut_coul_msm_omp.h:  PairLJCutCoulMSMOMP(class LAMMPS *);
+pair_lj_cut.cpp:PairLJCut::PairLJCut(LAMMPS *lmp) : Pair(lmp)
+pair_lj_cut.cpp:PairLJCut::~PairLJCut()
+pair_lj_cut.cpp:void PairLJCut::compute(int eflag, int vflag)
+pair_lj_cut.cpp:void PairLJCut::compute_inner()
+pair_lj_cut.cpp:void PairLJCut::compute_middle()
+pair_lj_cut.cpp:void PairLJCut::compute_outer(int eflag, int vflag)
+pair_lj_cut.cpp:void PairLJCut::allocate()
+pair_lj_cut.cpp:void PairLJCut::settings(int narg, char **arg)
+pair_lj_cut.cpp:void PairLJCut::coeff(int narg, char **arg)
+pair_lj_cut.cpp:void PairLJCut::init_style()
+pair_lj_cut.cpp:void PairLJCut::init_list(int id, NeighList *ptr)
+pair_lj_cut.cpp:double PairLJCut::init_one(int i, int j)
+pair_lj_cut.cpp:void PairLJCut::write_restart(FILE *fp)
+pair_lj_cut.cpp:void PairLJCut::read_restart(FILE *fp)
+pair_lj_cut.cpp:void PairLJCut::write_restart_settings(FILE *fp)
+pair_lj_cut.cpp:void PairLJCut::read_restart_settings(FILE *fp)
+pair_lj_cut.cpp:void PairLJCut::write_data(FILE *fp)
+pair_lj_cut.cpp:void PairLJCut::write_data_all(FILE *fp)
+pair_lj_cut.cpp:double PairLJCut::single(int i, int j, int itype, int jtype, double rsq,
+pair_lj_cut.cpp:void *PairLJCut::extract(const char *str, int &dim)
+pair_lj_cut.h:PairStyle(lj/cut,PairLJCut)
+pair_lj_cut.h:class PairLJCut : public Pair {
+pair_lj_cut.h:  PairLJCut(class LAMMPS *);
+pair_lj_cut.h:  virtual ~PairLJCut();
+pair_lj_cut_intel.cpp:PairLJCutIntel::PairLJCutIntel(LAMMPS *lmp) :
+pair_lj_cut_intel.cpp:  PairLJCut(lmp)
+pair_lj_cut_intel.cpp:void PairLJCutIntel::compute(int eflag, int vflag)
+pair_lj_cut_intel.cpp:void PairLJCutIntel::compute(int eflag, int vflag,
+pair_lj_cut_intel.cpp:void PairLJCutIntel::eval(const int offload, const int vflag,
+pair_lj_cut_intel.cpp:void PairLJCutIntel::init_style()
+pair_lj_cut_intel.cpp:  PairLJCut::init_style();
+pair_lj_cut_intel.cpp:void PairLJCutIntel::pack_force_const(ForceConst<flt_t> &fc,
+pair_lj_cut_intel.cpp:void PairLJCutIntel::ForceConst<flt_t>::set_ntypes(const int ntypes,
+pair_lj_cut_intel.h:PairStyle(lj/cut/intel,PairLJCutIntel)
+pair_lj_cut_intel.h:class PairLJCutIntel : public PairLJCut {
+pair_lj_cut_intel.h:  PairLJCutIntel(class LAMMPS *);
+pair_lj_cut_omp.cpp:PairLJCutOMP::PairLJCutOMP(LAMMPS *lmp) :
+pair_lj_cut_omp.cpp:  PairLJCut(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_omp.cpp:void PairLJCutOMP::compute(int eflag, int vflag)
+pair_lj_cut_omp.cpp:void PairLJCutOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_omp.cpp:double PairLJCutOMP::memory_usage()
+pair_lj_cut_omp.cpp:  bytes += PairLJCut::memory_usage();
+pair_lj_cut_omp.h:PairStyle(lj/cut/omp,PairLJCutOMP)
+pair_lj_cut_omp.h:class PairLJCutOMP : public PairLJCut, public ThrOMP {
+pair_lj_cut_omp.h:  PairLJCutOMP(class LAMMPS *);
+pair_lj_cut_tip4p_cut.cpp:PairLJCutTIP4PCut::PairLJCutTIP4PCut(LAMMPS *lmp) : Pair(lmp)
+pair_lj_cut_tip4p_cut.cpp:PairLJCutTIP4PCut::~PairLJCutTIP4PCut()
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::compute(int eflag, int vflag)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::allocate()
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::settings(int narg, char **arg)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::coeff(int narg, char **arg)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::init_style()
+pair_lj_cut_tip4p_cut.cpp:double PairLJCutTIP4PCut::init_one(int i, int j)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::write_restart(FILE *fp)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::read_restart(FILE *fp)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::write_restart_settings(FILE *fp)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::read_restart_settings(FILE *fp)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::write_data(FILE *fp)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::write_data_all(FILE *fp)
+pair_lj_cut_tip4p_cut.cpp:void PairLJCutTIP4PCut::compute_newsite(double *xO,  double *xH1,
+pair_lj_cut_tip4p_cut.cpp:void *PairLJCutTIP4PCut::extract(const char *str, int &dim)
+pair_lj_cut_tip4p_cut.cpp:double PairLJCutTIP4PCut::memory_usage()
+pair_lj_cut_tip4p_cut.h:PairStyle(lj/cut/tip4p/cut,PairLJCutTIP4PCut)
+pair_lj_cut_tip4p_cut.h:class PairLJCutTIP4PCut : public Pair {
+pair_lj_cut_tip4p_cut.h:  PairLJCutTIP4PCut(class LAMMPS *);
+pair_lj_cut_tip4p_cut.h:  virtual ~PairLJCutTIP4PCut();
+pair_lj_cut_tip4p_cut_omp.cpp:PairLJCutTIP4PCutOMP::PairLJCutTIP4PCutOMP(LAMMPS *lmp) :
+pair_lj_cut_tip4p_cut_omp.cpp:  PairLJCutTIP4PCut(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_tip4p_cut_omp.cpp:PairLJCutTIP4PCutOMP::~PairLJCutTIP4PCutOMP()
+pair_lj_cut_tip4p_cut_omp.cpp:void PairLJCutTIP4PCutOMP::compute(int eflag, int vflag)
+pair_lj_cut_tip4p_cut_omp.cpp:void PairLJCutTIP4PCutOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_tip4p_cut_omp.cpp:void PairLJCutTIP4PCutOMP::compute_newsite_thr(const dbl3_t &xO,
+pair_lj_cut_tip4p_cut_omp.cpp:double PairLJCutTIP4PCutOMP::memory_usage()
+pair_lj_cut_tip4p_cut_omp.cpp:  bytes += PairLJCutTIP4PCut::memory_usage();
+pair_lj_cut_tip4p_cut_omp.h:PairStyle(lj/cut/tip4p/cut/omp,PairLJCutTIP4PCutOMP)
+pair_lj_cut_tip4p_cut_omp.h:class PairLJCutTIP4PCutOMP : public PairLJCutTIP4PCut, public ThrOMP {
+pair_lj_cut_tip4p_cut_omp.h:  PairLJCutTIP4PCutOMP(class LAMMPS *);
+pair_lj_cut_tip4p_cut_omp.h:  virtual ~PairLJCutTIP4PCutOMP();
+pair_lj_cut_tip4p_long.cpp:PairLJCutTIP4PLong::PairLJCutTIP4PLong(LAMMPS *lmp) :
+pair_lj_cut_tip4p_long.cpp:  PairLJCutCoulLong(lmp)
+pair_lj_cut_tip4p_long.cpp:PairLJCutTIP4PLong::~PairLJCutTIP4PLong()
+pair_lj_cut_tip4p_long.cpp:void PairLJCutTIP4PLong::compute(int eflag, int vflag)
+pair_lj_cut_tip4p_long.cpp:void PairLJCutTIP4PLong::settings(int narg, char **arg)
+pair_lj_cut_tip4p_long.cpp:void PairLJCutTIP4PLong::init_style()
+pair_lj_cut_tip4p_long.cpp:  PairLJCutCoulLong::init_style();
+pair_lj_cut_tip4p_long.cpp:double PairLJCutTIP4PLong::init_one(int i, int j)
+pair_lj_cut_tip4p_long.cpp:  double cut = PairLJCutCoulLong::init_one(i,j);
+pair_lj_cut_tip4p_long.cpp:void PairLJCutTIP4PLong::write_restart_settings(FILE *fp)
+pair_lj_cut_tip4p_long.cpp:void PairLJCutTIP4PLong::read_restart_settings(FILE *fp)
+pair_lj_cut_tip4p_long.cpp:void PairLJCutTIP4PLong::compute_newsite(double *xO, double *xH1,
+pair_lj_cut_tip4p_long.cpp:void *PairLJCutTIP4PLong::extract(const char *str, int &dim)
+pair_lj_cut_tip4p_long.cpp:double PairLJCutTIP4PLong::memory_usage()
+pair_lj_cut_tip4p_long.h:PairStyle(lj/cut/tip4p/long,PairLJCutTIP4PLong)
+pair_lj_cut_tip4p_long.h:class PairLJCutTIP4PLong : public PairLJCutCoulLong {
+pair_lj_cut_tip4p_long.h:  PairLJCutTIP4PLong(class LAMMPS *);
+pair_lj_cut_tip4p_long.h:  ~PairLJCutTIP4PLong();
+pair_lj_cut_tip4p_long_omp.cpp:PairLJCutTIP4PLongOMP::PairLJCutTIP4PLongOMP(LAMMPS *lmp) :
+pair_lj_cut_tip4p_long_omp.cpp:  PairLJCutTIP4PLong(lmp), ThrOMP(lmp, THR_PAIR)
+pair_lj_cut_tip4p_long_omp.cpp:PairLJCutTIP4PLongOMP::~PairLJCutTIP4PLongOMP()
+pair_lj_cut_tip4p_long_omp.cpp:void PairLJCutTIP4PLongOMP::compute(int eflag, int vflag)
+pair_lj_cut_tip4p_long_omp.cpp:void PairLJCutTIP4PLongOMP::eval(int iifrom, int iito, ThrData * const thr)
+pair_lj_cut_tip4p_long_omp.cpp:void PairLJCutTIP4PLongOMP::compute_newsite_thr(const dbl3_t &xO,
+pair_lj_cut_tip4p_long_omp.cpp:double PairLJCutTIP4PLongOMP::memory_usage()
+pair_lj_cut_tip4p_long_omp.cpp:  bytes += PairLJCutTIP4PLong::memory_usage();
+pair_lj_cut_tip4p_long_omp.h:PairStyle(lj/cut/tip4p/long/omp,PairLJCutTIP4PLongOMP)
+pair_lj_cut_tip4p_long_omp.h:class PairLJCutTIP4PLongOMP : public PairLJCutTIP4PLong, public ThrOMP {
+pair_lj_cut_tip4p_long_omp.h:  PairLJCutTIP4PLongOMP(class LAMMPS *);
+pair_lj_cut_tip4p_long_omp.h:  virtual ~PairLJCutTIP4PLongOMP();

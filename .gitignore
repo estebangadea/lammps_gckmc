@@ -1,0 +1,39 @@
+src/lmp_mpi
+src/lmp_intel_cpu_lj_mdf_omp
+src/lmp_intel_cpu_lj_mdf_omp-sw0_omp
+src/lmp_intel_cpu
+src/lmp_intel_cpu_lj_mdf_omp_sw0_omp_new
+*.o
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+debug.log

@@ -1,0 +1,34 @@
+compute_group_group.cpp:  if (force->pair_match("hybrid",0) == NULL && force->pair->single_enable == 0)
+compute_pair.cpp:  pair = force->pair_match(pstyle,1);
+compute_pair.cpp:    pair = force->pair_match(pstyle,1);
+compute_pair.cpp:  pair = force->pair_match(pstyle,1);
+compute_ti.cpp:      pptr[m] = force->pair_match(pstyle[m],1);
+fix_adapt.cpp:      //   strip it for pstyle arg to pair_match() and set nsub = N
+fix_adapt.cpp:        pair = force->pair_match(psuffix,1,nsub);
+fix_adapt.cpp:      if (pair == NULL) pair = force->pair_match(pstyle,1,nsub);
+fix_adapt_fep.cpp:        pair = force->pair_match(psuffix,1);
+fix_adapt_fep.cpp:      if (pair == NULL) pair = force->pair_match(ad->pstyle,1);
+fix_gcmc.cpp:        (force->pair_match("hybrid",0)) ||
+fix_gcmc.cpp:        (force->pair_match("eam",0))
+fix_gcmc_vp.cpp:        (force->pair_match("hybrid",0)) ||
+fix_gcmc_vp.cpp:        (force->pair_match("eam",0))
+fix_intel.cpp:  if (force->pair_match("hybrid", 1) != NULL) {
+fix_intel.cpp:  } else if (force->pair_match("hybrid/overlay", 1) != NULL) {
+fix_intel.cpp:  if (force->pair_match("/intel", 0) != NULL)
+fix_intel.cpp:  else if (force->pair_match("hybrid", 1) != NULL) {
+fix_intel.cpp:  } else if (force->pair_match("hybrid/overlay", 1) != NULL) {
+fix_qeq_comb.cpp:  comb = (PairComb *) force->pair_match("comb",1);
+fix_qeq_comb.cpp:  comb3 = (PairComb3 *) force->pair_match("comb3",1);
+fix_qeq_comb_omp.cpp:  if (NULL != force->pair_match("comb3",0))
+fix_qeq_comb_omp.cpp:  comb = (PairComb *) force->pair_match("comb/omp",1);
+fix_qeq_comb_omp.cpp:    comb = (PairComb *) force->pair_match("comb",1);
+fix_srp.cpp:  if (force->pair_match("hybrid",1) == NULL)
+force.cpp:Pair *Force::pair_match(const char *word, int exact, int nsub)
+force.h:  class Pair *pair_match(const char *, int, int nsub=0);
+Binary file lmp_intel_cpu matches
+Binary file lmp_intel_cpu_lj_mdf_omp matches
+Binary file lmp_intel_cpu_lj_mdf_omp_sw0_omp matches
+Binary file lmp_intel_cpu_lj_mdf_omp-sw0_omp matches
+neighbor.cpp:  if (force->kspace || force->pair_match("coul/wolf",0) ||
+neighbor.cpp:      force->pair_match("coul/dsf",0) || force->pair_match("thole",0))
+pair.cpp:  Pair *epair = force->pair_match("eam",0);

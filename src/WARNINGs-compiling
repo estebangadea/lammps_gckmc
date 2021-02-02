@@ -1,0 +1,18 @@
+ipo: warning #11021: unresolved inflateReset
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved inflateEnd
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved deflate
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved inflate
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved crc32
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved deflateEnd
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved deflateReset
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved inflateInit_
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
+ipo: warning #11021: unresolved deflateInit2_
+        Referenced in /uufs/chpc.utah.edu/sys/installdir/png/1.2.50/lib/libpng.so
